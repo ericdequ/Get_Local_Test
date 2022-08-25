@@ -1,0 +1,217 @@
+
+button {
+  height: 40px;
+  width: auto;
+  outline: none;
+  margin: 10px;
+  background-color: #add8e6;
+  border: solid 1px black;
+  border-radius: 2px;
+}
+.header {
+  margin: 0px;
+  background-color: rgb(79, 173, 204);
+}
+body {
+  width: 350px;
+  min-height: 300px;
+  max-height: 600px;
+  overflow: auto;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%239C92AC' fill-opacity='0.25' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"),
+    linear-gradient(to right top, #1a4d80, #1a4d80, #1a4d80, #1a4d80, #1a4d80);
+}
+button.current {
+  box-shadow: 0 0 0 2px white, 0 0 0 4px black;
+}
+
+
+.term-result-window {
+  background-color: #1a88ad;
+  padding: 10px;
+  width: 80%;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px grey;
+}
+.term-result {
+  font-size: 16px;
+  font-weight: light;
+  color: white;
+}
+.term-definition {
+  font-size: 12px;
+  font-weight: light;
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.term-standard-organization {
+  font-size: 12px;
+  font-weight: light;
+  color: white;
+  margin-top: 5px;
+}
+.no-results-header {
+  margin-bottom: 2px;
+  margin: 0px;
+}
+hr {
+    width: 90%;
+    border: none;
+    background-color: black;
+    height: 1px;
+}
+.result-wrapper {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    min-height: 300px;
+}
+.pagination_element {
+    display: flex;
+    flex-direction: row;
+    column-gap: 15px;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+  }
+  .flex-center {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-self: flex-end;
+  }
+  .pagination_page {
+    display: flex;
+    flex-direction: row;
+    column-gap: 5px;
+  }
+  .chevron_pagi {
+    height: 20px;
+  }
+  .slash {
+    font-size: 30px;
+  }
+  #total_pages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    min-width: 50px;
+    background-color: grey;
+    border-radius: 5px;
+    border: 1px solid white;
+    color: white;
+  }
+  input#current_page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 50px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid black;
+    text-align: center;
+    color: black;
+    padding: 0px;
+  }
+.term-page {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 100%;
+  width: 100%;
+  transition: top 2s ease 0s; /* only transition top property */
+}
+.term-page.active {
+
+}
+.term-page-title {
+  padding-left: 10px;
+  padding-right: 45px;
+  font-size: 30px;
+  color: white;
+  font-weight: light;
+}
+.term-page-description {
+  margin-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 12px;
+  color: white;
+  font-weight: normal;
+}
+.term-page-sources {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 16px;
+  color: white;
+  margin-top: 5px;
+}
+.term-page-abbr-header {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+.term-page-abbreviations {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 16px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.term-page-abbr-flex {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  column-gap: 10px;
+}
+.term-page-abbr {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: white;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  width: auto;
+  display: flex;
+  color: black;
+}
+.term-page-source-header{
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+.term-page-source-list {
+  font-size: 12px;
+  font-weight: normal;
+  margin-top: 5px;
+}
+#quit-term-page {
+  margin-top: 3px;
+  margin-right: 20px;
+  position: absolute;
+  align-self: flex-end;
+  justify-content: flex-end;
+  width: 20px;
+  height: auto;
+}
+.no-results-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
